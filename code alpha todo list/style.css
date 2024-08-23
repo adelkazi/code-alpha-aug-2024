@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+ 
+font-family: 'Raleway', sans-serif;
+}
+.credits{
+  color: aliceblue;
+  text-align: center;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+background-image: linear-gradient(rgba(0, 0, 0, 0.803), rgba(0, 0, 0, 0.671)), url('image/marine.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: capitalize;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: white;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2 {
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+  
+  
+}
+
+.todo-app h2 img {
+  width: 30px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(243, 243, 243);
+  border-radius: 11px;
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  border-radius: 0 1rem  0 1rem;
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+button{
+  font-weight:522;
+  border: none;
+  outline: none;
+  padding: 1rem 3rem;
+  background-color:white;
+  color:rgb(0, 102, 255);
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 1rem  0 1rem;
+  text-transform: capitalize;
+  transition: .1s ease-in;
+}
+
+button:hover{
+  font-weight:722;
+  background: rgb(0, 42, 255);
+  color: rgb(255, 255, 255);
+  
+  scale: 1.1;
+}
+ul li{
+  list-style: none;
+  font-size: 1rem;
+  padding:1.35rem 11px 11px 3.25rem ;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  top: 1rem;
+  left: .5rem;
+background-image: url(image/unchecked.png);
+}
+
+ul li.checked{
+color: rgb(0, 0, 0);
+text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+  background-image: url(image/checked.png);
+
+}
+
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: red;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  transition: .3s ease-in-out;
+}
+
+ul li span:hover{
+ background-color: red;
+ color: white;
+ font-weight: bold;
+ scale: 1.04;
+}
