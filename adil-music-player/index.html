@@ -1,0 +1,165 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <!-- first half -->
+      <div class="music-list">
+        <div class="brand-name">ADIL'S MUSIC WEB APP</div>
+        <div class="search-bar">
+          <input type="text" id="search" placeholder="Search..." />
+        </div>
+        <ul id="music-list">
+          <li
+            data-song="audio\Magic Scout - Nothern Glade.mp3"
+            data-title="Magic Scout - Nothern Glade.mp3"
+            data-artist="Magic Scout"
+          >
+            <div class="music-card">
+              <div class="music-art">
+                <img src="pic/cat (5).jpg" alt="Album Art" />
+              </div>
+              <div class="details">
+                <div class="music-name">
+                  <h1>Nothern Glade</h1>
+                </div>
+                <div class="music-artist"><h3>Magic Scout</h3></div>
+              </div>
+            </div>
+          </li>
+
+          <li
+            data-song="audio\Ethereal Relaxation.mp3"
+            data-title="Ethereal Relaxation"
+            data-artist="Kevin MacLeod"
+          >
+            <div class="music-card">
+              <div class="music-art">
+                <img src="pic/cat (1).jpg" alt="Album Art" />
+              </div>
+              <div class="details">
+                <div class="music-name"><h1>Ethereal Relaxation</h1></div>
+                <div class="music-artist"><h3>Kevin MacLeod</h3></div>
+              </div>
+            </div>
+          </li>
+
+          <li
+            data-song="audio\Equatorial Complex.mp3"
+            data-title="Equatorial Complex"
+            data-artist="Kevin MacLeod"
+          >
+            <div class="music-card">
+              <div class="music-art">
+                <img src="pic/cat (2).jpg" alt="Album Art" />
+              </div>
+              <div class="details">
+                <div class="music-name"><h1>Equatorial Complex</h1></div>
+                <div class="music-artist"><h3>Kevin MacLeod</h3></div>
+              </div>
+            </div>
+          </li>
+
+           <li
+            data-song="audio\Paradise_Found.mp3"
+            data-title="Paradise_Found"
+            data-artist="Kevin MacLeod"
+          >
+            <div class="music-card">
+              <div class="music-art">
+                <img src="pic/hawaii.jpg" alt="Album Art" />
+              </div>
+              <div class="details">
+                <div class="music-name"><h1>Paradise_Found</h1></div>
+                <div class="music-artist"><h3>Kevin MacLeod</h3></div>
+              </div>
+            </div>
+          </li>
+
+           <li
+            data-song="audio\Night Vigil.mp3"
+            data-title="Night Vigil"
+            data-artist="Kevin MacLeod"
+          >
+            <div class="music-card">
+              <div class="music-art">
+                <img src="pic/cat (3).jpg" alt="Album Art" />
+              </div>
+              <div class="details">
+                <div class="music-name"><h1>Night Vigil</h1></div>
+                <div class="music-artist"><h3>Kevin MacLeod</h3></div>
+              </div>
+            </div>
+          </li>
+
+           <li
+            data-song="audio\That Zen Moment.mp3"
+            data-title="That Zen Moment"
+            data-artist="Kevin MacLeod"
+          >
+            <div class="music-card">
+              <div class="music-art">
+                <img src="pic/cat (4).jpg" alt="Album Art" />
+              </div>
+              <div class="details">
+                <div class="music-name"><h1>That Zen Moment</h1></div>
+                <div class="music-artist"><h3>Kevin MacLeod</h3></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- second half music-player -->
+      <div class="music-player">
+        <div class="album-cover">
+          <img
+            src="sample-pics/imager.jpg"
+            alt="Album Cover"
+            id="album-cover"
+          />
+        </div>
+        <div class="song-details">
+          <h2 class="song-name" id="current-song-name">Song Name</h2>
+          <h3 class="artist-name" id="current-artist-name">Artist Name</h3>
+        </div>
+        <div class="meter-bar">
+          <input
+            type="range"
+            class="progress-bar"
+            id="progress-bar"
+            value="0"
+            max="100"
+          />
+        </div>
+        <div class="control-buttons">
+          <button class="prev-btn" id="prev-btn">
+            <i class="bx bxs-skip-previous-circle"></i>
+          </button>
+          <button class="play-btn" id="play-btn">
+            <i class="bx bx-play-circle" id="play-icon"></i>
+          </button>
+          <button class="next-btn" id="next-btn">
+            <i class="bx bxs-skip-next-circle"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <audio id="audio-player"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

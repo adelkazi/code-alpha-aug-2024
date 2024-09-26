@@ -1,0 +1,143 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #4c4c4c;
+}
+
+.container {
+
+  display: flex;
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.music-list {
+  width: 40%;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.music-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.music-card:hover {
+  background-color: #eaeaea;
+}
+
+.music-art img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.music-name h1,
+.music-artist h3 {
+  margin: 0;
+}
+
+/* Music Player Styles */
+.music-player {
+  width: 60%;
+  padding: 20px;
+}
+.album-cover{
+  padding-left: 5rem;
+  
+  width: 90%;
+  height: 25rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.album-cover img {
+   aspect-ratio: 1/1;
+    min-height: 100%;
+  width: auto;
+  border-radius: 12px;
+}
+
+.song-details {
+  margin: 20px 0;
+}
+
+.song-name,
+.artist-name {
+  text-align: center;
+}
+
+.meter-bar {
+  margin: 20px 0;
+}
+
+.progress-bar {
+  width: 100%;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.control-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.control-buttons i {
+  font-size: 40px;
+}
